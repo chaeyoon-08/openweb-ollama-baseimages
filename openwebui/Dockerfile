@@ -9,7 +9,8 @@ RUN apt-get update \
        tesseract-ocr-eng \
     && echo 'ko_KR.UTF-8 UTF-8' > /etc/locale.gen \
     && locale-gen \
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/* \
+    && mkdir -p /workplace/service_v1/data /workplace/service_v1/uploads
 
 RUN pip install --no-cache-dir --upgrade \
     torch \
