@@ -30,12 +30,10 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build and push Ollama custom image
-        uses: docker/build-push-action@v5
+        uses: docker/build-push-action@v6
         with:
           context: ./ollama
           file: ./ollama/Dockerfile
           push: true
           tags: ${{ env.IMAGE_NAME }}:latest
           platforms: linux/amd64
-          cache-from: type=gha
-          cache-to: type=gha,mode=max

@@ -77,9 +77,13 @@ ollama:latest 이미지가 런타임에 GPU를 감지하여 cuda_v12 / cuda_v13 
 
 | 모델 | VRAM | 특징 |
 |------|------|------|
-| `deepseek-r1:8b` | 6GB | `<think>` 블록으로 추론 과정 실시간 노출 |
-| `qwen2.5:14b` | 10GB | 한국어 응답 품질 오픈소스 최상위 |
-| `llama3.3:70b` | 40GB+ | 오픈소스 최고 수준 (H200 기준 권장) |
+| `gemma4:4b` | 3GB | Google Gemma 4 — 멀티모달(텍스트+이미지), 128k 컨텍스트 |
+| `qwen3:8b` | 6GB | Alibaba Qwen 3 — 코딩·수학 강세, 하이브리드 추론 모드 지원 |
+| `gemma4:12b` | 8GB | Gemma 4 밸런스 — 추론·멀티모달, 오픈소스 리더보드 5위권 |
+| `qwen3:14b` | 10GB | Qwen 3 고성능 — 코딩·다국어·에이전틱 벤치마크 최상위권 |
+| `deepseek-r1:14b` | 12GB | `<think>` 블록으로 추론 과정 실시간 노출, 수학·코딩 특화 |
+| `gemma4:27b` | 20GB | Gemma 4 고성능 버전 |
+| `kimi-k2.5` | 40GB+ | Moonshot AI — HumanEval 99.0, 에이전틱 작업 최강 (H200 권장) |
 
 ---
 
