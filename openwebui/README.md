@@ -5,6 +5,19 @@ ghcr.io/open-webui/open-webui:main 기반 커스텀 이미지.
 
 ---
 
+## 버전
+
+| 항목 | 값 | 확인 기준 |
+|------|-----|---------|
+| OpenWebUI | **v0.8.12** | 2026-04-16 기준 최신 릴리즈 |
+| 베이스 이미지 | `ghcr.io/open-webui/open-webui:main` | main 브랜치 추종, 릴리즈보다 소폭 더 최신일 수 있음 |
+| PyTorch | CUDA 12.8 빌드 | pip `--upgrade` 적용, 빌드 시점 최신 자동 설치 |
+| 빌드 캐시 | GHA 캐시 활용 | PyTorch 재빌드 방지 목적 |
+
+> 이미지 빌드 시점에 따라 버전이 달라질 수 있습니다. 정확한 버전은 GitHub Actions 빌드 로그에서 확인하세요.
+
+---
+
 ## 베이스 이미지
 
 ```
